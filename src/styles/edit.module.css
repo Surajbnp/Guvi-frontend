@@ -1,0 +1,18 @@
+.cont{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cont > input{
+   padding: 5px;
+   border: 1px solid rgb(180, 178, 178);
+   width: 100%;
+}
+
+.cont > select{
+    padding: 5px;
+    width: 100%;
+    border: 1px solid grey;
+}

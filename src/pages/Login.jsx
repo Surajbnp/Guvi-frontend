@@ -1,5 +1,5 @@
 import { Box, Text, Spinner } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import styles from "../styles/login.module.css";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineEyeInvisible, AiFillEye } from "react-icons/ai";
@@ -25,9 +25,9 @@ const Login = () => {
     dispatch(login(payload)).then((res) => {
       if (res.type === "LOGIN_SUCCESS") {
         let token = res.payload.token.refreshToken;
-        saveToken(token)
+        saveToken(token);
         toast.success("Login Success!");
-        setTimeout(() => navigate("/profile"), 1000);
+        setTimeout(() => navigate("/"), 1000);
       } else if (res?.payload?.response?.status === 401) {
         toast.error(res?.payload?.response?.data?.msg);
       } else {

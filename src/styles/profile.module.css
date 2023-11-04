@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +8,6 @@
 
 .card {
   width: 28%;
-  height: 60vh;
   border-radius: 5px;
   padding: 30px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -29,11 +27,16 @@
 
 .name {
   font-size: 20px;
+  text-transform: capitalize;
 }
 
 .email {
   font-size: 14px;
   color: grey;
+}
+
+span{
+  color: rgb(119, 118, 118);
 }
 
 .info {
@@ -51,27 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.editBox > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  border-radius: 3px;
-  background-color: #578e87;
-  font-weight: 600;
-  color: white;
-  transition: 0.3s ease-in;
-  cursor: pointer;
-
-  &:hover {
-    background-color: white;
-    outline: 1px solid black;
-    color: black;
-  }
+  margin-top: 10px;
 }
 
 .btn button {
